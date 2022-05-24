@@ -1,4 +1,3 @@
-import pygame.font
 import json
 from random import choice
 
@@ -14,7 +13,7 @@ class Question:
 
     def _import_questions(self):
         """Получаем словарь вопросов с ответами."""
-        with open("questions.json", "r", encoding="utf-8") as read_file:
+        with open("data/questions.json", "r", encoding="utf-8") as read_file:
             self.remaining_questions = json.load(read_file)
 
     def get_new_question(self):

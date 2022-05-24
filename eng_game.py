@@ -65,7 +65,7 @@ class EnglishGame:
     def _quit_game(self):
         """Завершение игры и сохранение результатов."""
 
-        with open("high_score.txt", 'w') as f:
+        with open("data/high_score.txt", 'w') as f:
             f.write(str(self.stats.high_score))
 
         sys.exit()
@@ -179,6 +179,6 @@ class EnglishGame:
 
 
 if __name__ == '__main__':
-    # Создание экзмепляра и запуск игры
+    # Создание экземпляра и запуск игры
     eg = EnglishGame()
     eg.run_game()

@@ -25,7 +25,7 @@ class GameStats:
 
     def _set_high_score(self):
         """Устанавливаем максимальный результат из файла."""
-        if os.path.exists('high_score.txt'):
-            with open("high_score.txt") as f:
+        if os.path.exists('data/high_score.txt'):
+            with open("data/high_score.txt") as f:
                 for line in f:
                     self.high_score = int(line)

@@ -31,7 +31,7 @@ class Settings:
             "height": self.cell_height,
             "button_c": (0, 200, 64),
             "text_c": (255, 255, 255),
-            "font_name": 'timesnewromanpsmt.ttf',
+            "font_name": 'data/fonts/timesnewromanpsmt.ttf',
             "font_size": 39,
             "centery": 3.5 * (self.cell_height + self.cell_indent) + 0.5 * self.cell_indent
         }
